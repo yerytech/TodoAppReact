@@ -4,13 +4,22 @@ import Todo from './Todo';
 import '../styles/TodoList.css';
 function TodoList() {
 
-    const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([]);
+  
+
+
+
+
+
+
+
+
   const addTodo = todo => {
     if (todo.text.trim()) {
       todo.text = todo.text.trim();
       const todoNow = [todo, ...todos];
       setTodos(todoNow);
-        todos.pop()
+      
     }
     
   };

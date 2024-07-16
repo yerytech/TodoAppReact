@@ -20,7 +20,8 @@ const [input, setInput] = useState('')
       text: input,
       isCompleted: false
     }
-    props.onSubmit(newTodo)
+    props.onSubmit(newTodo);
+    setInput('')
   }
 
 
@@ -33,6 +34,7 @@ const [input, setInput] = useState('')
         type='text'
         placeholder='Add a todo'
         name='text'
+        value={input}
         onChange={sendChange}
       />
       <button
